@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #38804A; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Hackathon</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Power Moves</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">27</p>
+  </div>
+
+  <!-- Three power tips as horizontal rows (like slide 13) -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 10pt; justify-content: center;">
+    <!-- Skill -->
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 14pt 18pt; display: flex; align-items: center; gap: 16pt;">
+      <div style="width: 44pt; height: 44pt; background: #d8eadd; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 22pt;">🎨</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d; margin-bottom: 3pt;">Install the frontend-design skill</h3>
+        <p style="font-size: 10pt; color: #5a6b80;">For anything UI-related. The difference between "default template" and "real product."</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt; flex-shrink: 0;">
+        <div style="padding: 6pt 12pt; background: #e6ecf2; border-radius: 6pt;">
+          <p style="font-size: 9pt; color: #a0aab8;">Generic</p>
+        </div>
+        <p style="font-size: 10pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d8eadd; border-radius: 6pt;">
+          <p style="font-size: 9pt; color: #38804A; font-weight: 600;">Polished</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Playwright -->
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 14pt 18pt; display: flex; align-items: center; gap: 16pt;">
+      <div style="width: 44pt; height: 44pt; background: #d4e0ec; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 22pt;">🌐</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d; margin-bottom: 3pt;">Set up Playwright MCP</h3>
+        <p style="font-size: 10pt; color: #5a6b80;">Let the agent open a browser, navigate your app, and screenshot its own work.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 5pt; flex-shrink: 0;">
+        <div style="padding: 5pt 9pt; background: #d4e0ec; border-radius: 6pt;">
+          <p style="font-size: 8pt; color: #2E5880;">Code</p>
+        </div>
+        <p style="font-size: 9pt; color: #a0aab8;">→</p>
+        <div style="padding: 5pt 9pt; background: #d4e0ec; border-radius: 6pt;">
+          <p style="font-size: 8pt; color: #2E5880;">Browse</p>
+        </div>
+        <p style="font-size: 9pt; color: #a0aab8;">→</p>
+        <div style="padding: 5pt 9pt; background: #d4e0ec; border-radius: 6pt;">
+          <p style="font-size: 8pt; color: #2E5880;">Screenshot</p>
+        </div>
+        <p style="font-size: 9pt; color: #a0aab8;">→</p>
+        <div style="padding: 5pt 9pt; background: #d8eadd; border-radius: 6pt;">
+          <p style="font-size: 8pt; color: #38804A; font-weight: 600;">Fix</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conductor -->
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 14pt 18pt; display: flex; align-items: center; gap: 16pt;">
+      <div style="width: 44pt; height: 44pt; background: #e8ddf0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 22pt;">⚡</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d; margin-bottom: 3pt;">Git worktrees + Conductor</h3>
+        <p style="font-size: 10pt; color: #5a6b80;">Scale by running more agents, not typing faster. Two features at once.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4pt; flex-shrink: 0; width: 140pt;">
+        <div style="display: flex; gap: 4pt; align-items: center;">
+          <div style="width: 3pt; height: 16pt; background: #6B3E8A; border-radius: 2pt;"></div>
+          <div style="flex: 1; padding: 4pt 10pt; background: #e8ddf0; border-radius: 4pt;">
+            <p style="font-size: 8pt; color: #6B3E8A;">Agent 1 → Feature A</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 4pt; align-items: center;">
+          <div style="width: 3pt; height: 16pt; background: #6B3E8A; border-radius: 2pt;"></div>
+          <div style="flex: 1; padding: 4pt 10pt; background: #e8ddf0; border-radius: 4pt;">
+            <p style="font-size: 8pt; color: #6B3E8A;">Agent 2 → Feature B</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

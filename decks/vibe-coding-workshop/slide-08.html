@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #2E5880; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Context</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Context Overflow</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">08</p>
+  </div>
+
+  <!-- Three stages -->
+  <div style="flex: 1; display: flex; gap: 16pt; align-items: stretch;">
+    <!-- Stage 1 -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #38804A; letter-spacing: 0.04em;">1. FRESH START</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; position: relative;">
+        <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">
+          <p style="font-size: 10pt; color: #a0aab8; text-align: center;">Plenty of room</p>
+        </div>
+        <div style="height: 22%; background: #d8eadd; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 9pt; color: #38804A;">CLAUDE.md</p>
+        </div>
+      </div>
+      <p style="font-size: 10pt; color: #38804A;">Context is clean</p>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="font-size: 18pt; color: #a0aab8;">→</p>
+    </div>
+
+    <!-- Stage 2 -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #2E5880; letter-spacing: 0.04em;">2. FILLING UP</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; position: relative;">
+        <div style="position: absolute; top: 8%; left: 50%; transform: translateX(-50%);">
+          <p style="font-size: 9pt; color: #a0aab8;">Little room left</p>
+        </div>
+        <div style="height: 20%; background: #e6ecf2; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #5a6b80;">Responses</p>
+        </div>
+        <div style="height: 25%; background: #d4e0ec; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #2E5880;">Files read</p>
+        </div>
+        <div style="height: 20%; background: #e6ecf2; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #5a6b80;">Messages</p>
+        </div>
+        <div style="height: 15%; background: #d8eadd; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #38804A;">CLAUDE.md</p>
+        </div>
+      </div>
+      <p style="font-size: 10pt; color: #2E5880;">Getting crowded</p>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="font-size: 18pt; color: #a0aab8;">→</p>
+    </div>
+
+    <!-- Stage 3 -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #B8453E; letter-spacing: 0.04em;">3. COMPACTION</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 2pt solid #B8453E; border-radius: 8pt; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; position: relative;">
+        <div style="position: absolute; top: 8%; left: 50%; transform: translateX(-50%); text-align: center;">
+          <p style="font-size: 9pt; color: #B8453E; font-weight: 600;">Older info summarized</p>
+          <p style="font-size: 9pt; color: #B8453E;">Details lost!</p>
+        </div>
+        <div style="height: 30%; background: #e6ecf2; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #5a6b80;">New messages</p>
+        </div>
+        <div style="height: 25%; background: #f0d8d6; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #B8453E;">Compressed summary</p>
+        </div>
+        <div style="height: 15%; background: #d8eadd; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 8pt; color: #38804A;">CLAUDE.md</p>
+        </div>
+      </div>
+      <p style="font-size: 10pt; color: #B8453E;">Agent gets confused</p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div style="margin-top: 12pt; text-align: center;">
+    <p style="font-size: 13pt; font-weight: 600; color: #1a2a3d;">Goal: <span style="color: #38804A;">Be strategic</span> about what goes into context.</p>
+  </div>
+</body>
+</html>

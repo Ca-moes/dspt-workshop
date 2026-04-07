@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #2E5880; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Context</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Hooks — Automated Guardrails</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">13</p>
+  </div>
+
+  <!-- Three hooks as horizontal rows -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 12pt; justify-content: center;">
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 16pt 20pt; display: flex; align-items: center; gap: 18pt;">
+      <div style="width: 42pt; height: 42pt; background: #d4e0ec; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 20pt;">🔍</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d;">Pre-commit</h3>
+        <p style="font-size: 11pt; color: #5a6b80;">Auto-lint and format before every commit</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt; flex-shrink: 0;">
+        <div style="padding: 6pt 12pt; background: #e6ecf2; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #5a6b80;">Agent commits</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d4e0ec; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #2E5880; font-weight: 500;">Lint runs</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d8eadd; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #38804A; font-weight: 600;">Clean ✓</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 16pt 20pt; display: flex; align-items: center; gap: 18pt;">
+      <div style="width: 42pt; height: 42pt; background: #d8eadd; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 20pt;">✅</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d;">Post-save</h3>
+        <p style="font-size: 11pt; color: #5a6b80;">Run tests automatically when a file changes</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt; flex-shrink: 0;">
+        <div style="padding: 6pt 12pt; background: #e6ecf2; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #5a6b80;">File saved</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d8eadd; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #38804A; font-weight: 500;">Tests run</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d8eadd; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #38804A; font-weight: 600;">Pass ✓</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 16pt 20pt; display: flex; align-items: center; gap: 18pt;">
+      <div style="width: 42pt; height: 42pt; background: #e8ddf0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <p style="font-size: 20pt;">🛡️</p>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 13pt; font-weight: 600; color: #1a2a3d;">Pre-push</h3>
+        <p style="font-size: 11pt; color: #5a6b80;">Security checks before pushing to remote</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt; flex-shrink: 0;">
+        <div style="padding: 6pt 12pt; background: #e6ecf2; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #5a6b80;">Agent pushes</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #e8ddf0; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #6B3E8A; font-weight: 500;">Security scan</p>
+        </div>
+        <p style="font-size: 11pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 12pt; background: #d8eadd; border-radius: 10pt;">
+          <p style="font-size: 9pt; color: #38804A; font-weight: 600;">Safe ✓</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div style="margin-top: 14pt; text-align: center;">
+    <p style="font-size: 12pt; color: #5a6b80;">Invisible quality gates — the agent follows your rules <span style="font-weight: 600; color: #1a2a3d;">without being told every time</span>.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 48pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    body::after {
+      content: '';
+      position: absolute;
+      top: -60pt;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400pt;
+      height: 200pt;
+      background: radial-gradient(ellipse, rgba(46,88,128,0.06) 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Section label -->
+  <div style="position: relative; z-index: 1;">
+    <p style="font-size: 9pt; font-weight: 600; color: #2E5880; letter-spacing: 0.12em; text-transform: uppercase;">Section E</p>
+  </div>
+
+  <!-- Main title -->
+  <div style="position: relative; z-index: 1;">
+    <h1 style="font-size: 46pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.03em; line-height: 1.2;">
+      From Code<br>to Production
+    </h1>
+    <p style="font-size: 14pt; color: #5a6b80; margin-top: 16pt; max-width: 380pt; line-height: 1.6;">
+      The full workflow teams are running today.
+    </p>
+  </div>
+
+  <!-- Handoff note -->
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; position: relative; z-index: 1;">
+    <p style="font-size: 10pt; color: #38804A;">Dani takes back over</p>
+    <p style="font-size: 10pt; color: #a0aab8;">23</p>
+  </div>
+</body>
+</html>

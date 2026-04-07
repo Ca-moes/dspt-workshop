@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 40pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28pt;">
+    <h2 style="font-size: 28pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Quick Pulse Check</h2>
+    <p style="font-size: 9pt; color: #a0aab8;">02</p>
+  </div>
+
+  <!-- Content: QR + Questions -->
+  <div style="flex: 1; display: flex; gap: 40pt; align-items: center;">
+    <!-- QR placeholder -->
+    <div style="width: 180pt; height: 180pt; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0;">
+      <img src="./assets/qr-pulse-check.png" alt="QR code for pulse check" style="width: 130pt; height: 130pt; border-radius: 4pt;">
+      <p style="font-size: 9pt; color: #5a6b80; margin-top: 10pt;">Scan to participate</p>
+    </div>
+
+    <!-- Questions -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 20pt;">
+      <div>
+        <p style="font-size: 8pt; font-weight: 600; color: #38804A; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6pt;">Question 1</p>
+        <p style="font-size: 13pt; color: #1a2a3d; line-height: 1.5;">"How would you describe your experience with AI coding tools?"</p>
+        <p style="font-size: 10pt; color: #5a6b80; margin-top: 4pt;">Never used one &middot; Tried once or twice &middot; Use occasionally &middot; Daily user</p>
+      </div>
+      <div>
+        <p style="font-size: 8pt; font-weight: 600; color: #38804A; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6pt;">Question 2</p>
+        <p style="font-size: 13pt; color: #1a2a3d; line-height: 1.5;">"What do you most want to build with AI tools?"</p>
+        <p style="font-size: 10pt; color: #5a6b80; margin-top: 4pt;">Web app &middot; Mobile app &middot; Automation / scripts &middot; Data dashboard &middot; Something else</p>
+      </div>
+      <div>
+        <p style="font-size: 8pt; font-weight: 600; color: #38804A; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6pt;">Question 3</p>
+        <p style="font-size: 13pt; color: #1a2a3d; line-height: 1.5;">"What's your biggest concern about AI-assisted coding?"</p>
+        <p style="font-size: 10pt; color: #5a6b80; margin-top: 4pt;">Quality of code &middot; Security risks &middot; Losing control &middot; Not understanding the output &middot; No concerns</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display: flex; justify-content: flex-end; padding-top: 12pt;">
+    <p style="font-size: 9pt; color: #a0aab8;">Fully anonymous</p>
+  </div>
+</body>
+</html>

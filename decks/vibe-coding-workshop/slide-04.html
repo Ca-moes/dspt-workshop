@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #38804A; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Landscape</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Model vs. Agent</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">04</p>
+  </div>
+
+  <!-- Two visual columns -->
+  <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 24pt;">
+    <!-- Model -->
+    <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 20pt; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <p style="font-size: 40pt; margin-bottom: 10pt;">🧠</p>
+      <h3 style="font-size: 17pt; font-weight: 600; color: #1a2a3d; margin-bottom: 14pt;">The Model</h3>
+      <!-- Visual: prompt → response only -->
+      <div style="width: 100%; display: flex; align-items: center; gap: 8pt; justify-content: center; margin-bottom: 14pt;">
+        <div style="padding: 7pt 14pt; background: #e6ecf2; border-radius: 14pt;">
+          <p style="font-size: 10pt; color: #5a6b80;">You ask</p>
+        </div>
+        <p style="font-size: 12pt; color: #a0aab8;">→</p>
+        <div style="padding: 7pt 14pt; background: #e6ecf2; border-radius: 14pt;">
+          <p style="font-size: 10pt; color: #5a6b80;">Gets an answer</p>
+        </div>
+      </div>
+      <p style="font-size: 12pt; color: #5a6b80; line-height: 1.5;">Can only talk. No files, no terminal, no memory between conversations.</p>
+    </div>
+
+    <!-- Agent -->
+    <div style="background: #ffffff; border: 2pt solid #38804A; border-radius: 8pt; padding: 20pt; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <p style="font-size: 40pt; margin-bottom: 10pt;">🤖</p>
+      <h3 style="font-size: 17pt; font-weight: 600; color: #1a2a3d; margin-bottom: 14pt;">The Agent</h3>
+      <!-- Visual: multi-step pipeline -->
+      <div style="width: 100%; display: flex; align-items: center; gap: 5pt; justify-content: center; margin-bottom: 14pt;">
+        <div style="padding: 6pt 10pt; background: #d8eadd; border-radius: 12pt;">
+          <p style="font-size: 9pt; color: #38804A;">Describe</p>
+        </div>
+        <p style="font-size: 10pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 10pt; background: #d8eadd; border-radius: 12pt;">
+          <p style="font-size: 9pt; color: #38804A;">Reads</p>
+        </div>
+        <p style="font-size: 10pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 10pt; background: #d8eadd; border-radius: 12pt;">
+          <p style="font-size: 9pt; color: #38804A;">Edits</p>
+        </div>
+        <p style="font-size: 10pt; color: #a0aab8;">→</p>
+        <div style="padding: 6pt 10pt; background: #d8eadd; border-radius: 12pt;">
+          <p style="font-size: 9pt; color: #38804A;">Tests</p>
+        </div>
+      </div>
+      <p style="font-size: 12pt; color: #5a6b80; line-height: 1.5;">Thinks <span style="font-weight: 600; color: #38804A;">and</span> acts. Uses model + tools to take real action.</p>
+    </div>
+  </div>
+
+  <!-- Bottom callout -->
+  <div style="margin-top: 16pt; text-align: center;">
+    <p style="font-size: 15pt; font-weight: 600; color: #38804A; letter-spacing: -0.01em;">A model <span style="color: #5a6b80; font-weight: 400;">thinks.</span> An agent <span style="color: #5a6b80; font-weight: 400;">thinks and</span> does.</p>
+  </div>
+</body>
+</html>

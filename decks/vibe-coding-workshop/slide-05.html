@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #38804A; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Landscape</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">The Current Landscape</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">05</p>
+  </div>
+
+  <!-- Two sections centered vertically -->
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 18pt;">
+    <!-- Free tier section -->
+    <div>
+      <div style="display: flex; align-items: center; gap: 8pt; margin-bottom: 10pt;">
+        <div style="width: 8pt; height: 8pt; border-radius: 50%; background: #38804A;"></div>
+        <p style="font-size: 10pt; font-weight: 600; color: #38804A; letter-spacing: 0.04em; text-transform: uppercase;">Free Tier — Use These in the Hackathon</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10pt;">
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #38804A; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">GitHub Copilot</h3>
+          <p style="font-size: 9pt; color: #38804A; font-weight: 500; margin-bottom: 6pt;">IDE Agent</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Integrated into VS Code</p>
+        </div>
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #38804A; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">Cursor</h3>
+          <p style="font-size: 9pt; color: #38804A; font-weight: 500; margin-bottom: 6pt;">IDE</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Built-in agent mode</p>
+        </div>
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #38804A; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">Gemini CLI</h3>
+          <p style="font-size: 9pt; color: #38804A; font-weight: 500; margin-bottom: 6pt;">CLI Agent</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Google's terminal agent</p>
+        </div>
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #38804A; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">Windsurf</h3>
+          <p style="font-size: 9pt; color: #38804A; font-weight: 500; margin-bottom: 6pt;">IDE</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Agentic coding IDE</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paid section -->
+    <div>
+      <div style="display: flex; align-items: center; gap: 8pt; margin-bottom: 10pt;">
+        <div style="width: 8pt; height: 8pt; border-radius: 50%; background: #a0aab8;"></div>
+        <p style="font-size: 10pt; font-weight: 600; color: #5a6b80; letter-spacing: 0.04em; text-transform: uppercase;">Paid</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10pt;">
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">Claude Code</h3>
+          <p style="font-size: 9pt; color: #5a6b80; font-weight: 500; margin-bottom: 6pt;">CLI Agent</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Terminal-based, deep context</p>
+        </div>
+        <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 6pt; padding: 12pt 14pt;">
+          <h3 style="font-size: 12pt; font-weight: 600; color: #1a2a3d; margin-bottom: 4pt;">OpenAI Codex</h3>
+          <p style="font-size: 9pt; color: #5a6b80; font-weight: 500; margin-bottom: 6pt;">Cloud Agent</p>
+          <p style="font-size: 9pt; color: #5a6b80; line-height: 1.4;">Runs in a sandbox, async</p>
+        </div>
+        <div style="grid-column: span 2;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div style="margin-top: 12pt; text-align: center;">
+    <p style="font-size: 10pt; color: #5a6b80;">The principles we teach today apply to all of them.</p>
+  </div>
+</body>
+</html>

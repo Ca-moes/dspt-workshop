@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24pt;">
+    <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Resources</h2>
+    <p style="font-size: 9pt; color: #a0aab8;">28</p>
+  </div>
+
+  <!-- Centered content -->
+  <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24pt;">
+    <!-- QR placeholder -->
+    <div style="display: flex; align-items: center; gap: 28pt;">
+      <div style="width: 120pt; height: 120pt; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <img src="./assets/qr-resources.png" alt="QR code for resources" style="width: 100pt; height: 100pt; border-radius: 4pt;">
+      </div>
+      <div>
+        <p style="font-size: 14pt; font-weight: 600; color: #1a2a3d;">Scan for all links in one place</p>
+        <p style="font-size: 11pt; color: #5a6b80; margin-top: 4pt;">Especially useful for the hackathon this afternoon</p>
+      </div>
+    </div>
+
+    <!-- Resource categories as a clean grid -->
+    <div style="width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12pt;">
+      <!-- Best practices -->
+      <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #38804A; border-radius: 6pt; padding: 12pt 14pt;">
+        <p style="font-size: 9pt; font-weight: 600; color: #38804A; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8pt;">Best Practices</p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 5pt;">
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Claude Code Best Practices</p></li>
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Agency Agents (templates)</p></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #2E5880; border-radius: 6pt; padding: 12pt 14pt;">
+        <p style="font-size: 9pt; font-weight: 600; color: #2E5880; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8pt;">Tools</p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 5pt;">
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Anthropic Skills</p></li>
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Conductor</p></li>
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Playwright MCP</p></li>
+        </ul>
+      </div>
+
+      <!-- Learning -->
+      <div style="background: #ffffff; border: 1pt solid #d0d8e4; border-top: 2pt solid #6B3E8A; border-radius: 6pt; padding: 12pt 14pt;">
+        <p style="font-size: 9pt; font-weight: 600; color: #6B3E8A; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8pt;">Learning</p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 5pt;">
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Anthropic Prompting Guide</p></li>
+          <li><p style="font-size: 10pt; color: #1a2a3d;">Mermaid (diagrams)</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

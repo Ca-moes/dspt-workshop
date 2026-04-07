@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #38804A; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Workflow</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">The PRD — Your Feature Blueprint</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">17</p>
+  </div>
+
+  <!-- PRD document mockup — larger text -->
+  <div style="flex: 1; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; overflow: hidden; display: flex; flex-direction: column;">
+    <!-- Window chrome -->
+    <div style="background: #e6ecf2; padding: 8pt 14pt; display: flex; align-items: center; gap: 6pt;">
+      <div style="width: 7pt; height: 7pt; border-radius: 50%; background: #B8453E;"></div>
+      <div style="width: 7pt; height: 7pt; border-radius: 50%; background: #B89A3E;"></div>
+      <div style="width: 7pt; height: 7pt; border-radius: 50%; background: #38804A;"></div>
+      <p style="font-size: 9pt; color: #5a6b80; margin-left: 8pt;">PRD = Product Requirement Document</p>
+    </div>
+
+    <!-- Fields — larger -->
+    <div style="flex: 1; padding: 18pt 22pt; display: grid; grid-template-columns: 110pt 1fr; gap: 14pt 16pt; align-content: center;">
+      <p style="font-size: 13pt; font-weight: 600; color: #38804A;">Goal</p>
+      <p style="font-size: 13pt; color: #3d4f66; line-height: 1.5;">"What problem does this solve?"</p>
+
+      <p style="font-size: 13pt; font-weight: 600; color: #38804A;">User stories</p>
+      <p style="font-size: 13pt; color: #3d4f66; line-height: 1.5;">"As a [user], I want [X] so that [Y]"</p>
+
+      <p style="font-size: 13pt; font-weight: 600; color: #38804A;">Acceptance</p>
+      <p style="font-size: 13pt; color: #3d4f66; line-height: 1.5;">"How do we know it's done?"</p>
+
+      <p style="font-size: 13pt; font-weight: 600; color: #38804A;">Constraints</p>
+      <p style="font-size: 13pt; color: #3d4f66; line-height: 1.5;">"Framework, patterns, file locations"</p>
+
+      <p style="font-size: 13pt; font-weight: 600; color: #B8453E;">Out of scope</p>
+      <p style="font-size: 13pt; color: #3d4f66; line-height: 1.5;">"What should NOT be changed"</p>
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div style="margin-top: 10pt; text-align: center;">
+    <p style="font-size: 10pt; color: #5a6b80;">A well-structured GitHub Issue is a PRD. The key is <span style="color: #1a2a3d; font-weight: 500;">clarity and specificity</span>.</p>
+  </div>
+</body>
+</html>

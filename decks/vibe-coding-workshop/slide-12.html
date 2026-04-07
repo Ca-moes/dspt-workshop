@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #2E5880; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Context</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">Subagents — Fresh Context</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">12</p>
+  </div>
+
+  <!-- Before/after -->
+  <div style="flex: 1; display: flex; gap: 14pt; align-items: stretch;">
+    <!-- Without subagents -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #B8453E; letter-spacing: 0.04em; text-transform: uppercase;">Without Subagents</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 10pt; display: flex; flex-direction: column; gap: 4pt;">
+        <p style="font-size: 8pt; background: #e6ecf2; padding: 4pt 8pt; border-radius: 3pt; color: #5a6b80;">Building feature...</p>
+        <p style="font-size: 8pt; background: #f0d8d6; padding: 4pt 8pt; border-radius: 3pt; color: #B8453E;">Wait, need to research API</p>
+        <p style="font-size: 8pt; background: #f0d8d6; padding: 4pt 8pt; border-radius: 3pt; color: #B8453E;">Reading docs page 1...</p>
+        <p style="font-size: 8pt; background: #f0d8d6; padding: 4pt 8pt; border-radius: 3pt; color: #B8453E;">Reading docs page 2...</p>
+        <p style="font-size: 8pt; background: #f0d8d6; padding: 4pt 8pt; border-radius: 3pt; color: #B8453E;">Trying example...</p>
+        <p style="font-size: 8pt; background: #f0d8d6; padding: 4pt 8pt; border-radius: 3pt; color: #B8453E;">Error, trying again...</p>
+        <p style="font-size: 8pt; background: #e6ecf2; padding: 4pt 8pt; border-radius: 3pt; color: #5a6b80;">Back to feature (confused)</p>
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 9pt; color: #B8453E;">Context full of noise</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="font-size: 18pt; color: #a0aab8;">→</p>
+    </div>
+
+    <!-- With subagents -->
+    <div style="flex: 1.4; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #38804A; letter-spacing: 0.04em; text-transform: uppercase;">With Subagents</p>
+      <div style="width: 100%; flex: 1; display: flex; gap: 10pt;">
+        <!-- Main agent -->
+        <div style="flex: 1; background: #ffffff; border: 2pt solid #38804A; border-radius: 8pt; padding: 10pt; display: flex; flex-direction: column; gap: 4pt;">
+          <p style="font-size: 9pt; font-weight: 600; color: #38804A; margin-bottom: 2pt;">MAIN AGENT</p>
+          <p style="font-size: 8pt; background: #e6ecf2; padding: 4pt 8pt; border-radius: 3pt; color: #5a6b80;">Building feature...</p>
+          <p style="font-size: 8pt; background: #d4e0ec; padding: 4pt 8pt; border-radius: 3pt; color: #2E5880;">Delegate: research API</p>
+          <p style="font-size: 8pt; background: #d8eadd; padding: 4pt 8pt; border-radius: 3pt; color: #38804A;">Got summary back ✓</p>
+          <p style="font-size: 8pt; background: #e6ecf2; padding: 4pt 8pt; border-radius: 3pt; color: #5a6b80;">Continue building...</p>
+          <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+            <p style="font-size: 9pt; color: #38804A;">Clean and focused</p>
+          </div>
+        </div>
+
+        <!-- Subagent -->
+        <div style="width: 110pt; background: #ffffff; border: 1pt solid #2E5880; border-radius: 8pt; padding: 8pt; display: flex; flex-direction: column; gap: 4pt;">
+          <p style="font-size: 8pt; font-weight: 600; color: #2E5880; margin-bottom: 2pt;">SUBAGENT</p>
+          <p style="font-size: 8pt; background: #e6ecf2; padding: 3pt 6pt; border-radius: 2pt; color: #5a6b80;">Read docs</p>
+          <p style="font-size: 8pt; background: #e6ecf2; padding: 3pt 6pt; border-radius: 2pt; color: #5a6b80;">Try examples</p>
+          <p style="font-size: 8pt; background: #e6ecf2; padding: 3pt 6pt; border-radius: 2pt; color: #5a6b80;">Debug errors</p>
+          <p style="font-size: 8pt; background: #d8eadd; padding: 3pt 6pt; border-radius: 2pt; color: #38804A;">Return summary</p>
+          <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+            <p style="font-size: 8pt; color: #5a6b80;">Own context</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

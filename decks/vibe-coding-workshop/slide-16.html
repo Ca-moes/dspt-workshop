@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #38804A; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Workflow</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">The Golden Rule</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">16</p>
+  </div>
+
+  <!-- Visual flow diagram -->
+  <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20pt;">
+    <!-- Hero statement -->
+    <h1 style="font-size: 32pt; font-weight: 700; color: #38804A; letter-spacing: -0.02em; text-align: center;">First Plan, Then Implement.</h1>
+
+    <!-- Flow diagram: wrong way vs right way -->
+    <div style="display: flex; gap: 32pt; width: 100%; margin-top: 8pt;">
+      <!-- Wrong way -->
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+        <p style="font-size: 9pt; font-weight: 600; color: #B8453E; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4pt;">The Mistake</p>
+        <div style="display: flex; align-items: center; gap: 6pt;">
+          <div style="padding: 8pt 12pt; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #1a2a3d;">Vague prompt</p>
+          </div>
+          <p style="font-size: 12pt; color: #a0aab8;">→</p>
+          <div style="padding: 8pt 12pt; background: #f0d8d6; border: 1pt solid #B8453E; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #B8453E;">Bad assumptions</p>
+          </div>
+          <p style="font-size: 12pt; color: #a0aab8;">→</p>
+          <div style="padding: 8pt 12pt; background: #f0d8d6; border: 1pt solid #B8453E; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #B8453E;">Rework</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div style="width: 1pt; background: #d0d8e4;"></div>
+
+      <!-- Right way -->
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8pt;">
+        <p style="font-size: 9pt; font-weight: 600; color: #38804A; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4pt;">The Right Way</p>
+        <div style="display: flex; align-items: center; gap: 6pt;">
+          <div style="padding: 8pt 12pt; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #1a2a3d;">Define</p>
+          </div>
+          <p style="font-size: 12pt; color: #a0aab8;">→</p>
+          <div style="padding: 8pt 12pt; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #1a2a3d;">Plan</p>
+          </div>
+          <p style="font-size: 12pt; color: #a0aab8;">→</p>
+          <div style="padding: 8pt 12pt; background: #d8eadd; border: 1pt solid #38804A; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #38804A;">Build</p>
+          </div>
+          <p style="font-size: 12pt; color: #a0aab8;">→</p>
+          <div style="padding: 8pt 12pt; background: #d8eadd; border: 1pt solid #38804A; border-radius: 6pt; white-space: nowrap;">
+            <p style="font-size: 9pt; color: #38804A;">Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom callout -->
+    <p style="font-size: 11pt; color: #5a6b80; text-align: center; margin-top: 8pt;">You are the product owner. The agent is the developer.</p>
+  </div>
+</body>
+</html>

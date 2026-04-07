@@ -1,0 +1,4 @@
+slides-grab/
+node_modules/
+.claude/
+decks/vibe-coding-workshop/assets/mermaid-diagram-*

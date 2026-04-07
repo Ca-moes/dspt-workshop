@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt;
+      height: 405pt;
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f3f7;
+      padding: 36pt 48pt;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20pt;">
+    <div style="display: flex; align-items: center; gap: 12pt;">
+      <p style="font-size: 8pt; font-weight: 600; color: #ffffff; background: #2E5880; padding: 3pt 8pt; border-radius: 3pt; letter-spacing: 0.06em; text-transform: uppercase;">Context</p>
+      <h2 style="font-size: 22pt; font-weight: 600; color: #1a2a3d; letter-spacing: -0.02em;">MCP Servers</h2>
+    </div>
+    <p style="font-size: 9pt; color: #a0aab8;">14</p>
+  </div>
+
+  <!-- Without vs With -->
+  <div style="flex: 1; display: flex; gap: 20pt; align-items: stretch;">
+    <!-- Without -->
+    <div style="width: 180pt; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 10pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #B8453E; letter-spacing: 0.04em; text-transform: uppercase;">Without MCPs</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 1pt solid #d0d8e4; border-radius: 8pt; padding: 16pt; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14pt;">
+        <div style="width: 64pt; height: 64pt; background: #e6ecf2; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <p style="font-size: 28pt;">🤖</p>
+        </div>
+        <p style="font-size: 11pt; color: #5a6b80; text-align: center; line-height: 1.5;">Agent can only see local files and terminal</p>
+        <div style="display: flex; gap: 8pt;">
+          <div style="padding: 7pt 14pt; background: #e6ecf2; border-radius: 4pt;">
+            <p style="font-size: 10pt; color: #5a6b80;">Files</p>
+          </div>
+          <div style="padding: 7pt 14pt; background: #e6ecf2; border-radius: 4pt;">
+            <p style="font-size: 10pt; color: #5a6b80;">Terminal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="font-size: 18pt; color: #a0aab8;">→</p>
+    </div>
+
+    <!-- With -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 10pt;">
+      <p style="font-size: 10pt; font-weight: 600; color: #38804A; letter-spacing: 0.04em; text-transform: uppercase;">With MCPs</p>
+      <div style="width: 100%; flex: 1; background: #ffffff; border: 2pt solid #38804A; border-radius: 8pt; padding: 14pt; display: flex; flex-direction: column; gap: 12pt;">
+        <div style="display: flex; align-items: center; gap: 10pt;">
+          <div style="width: 44pt; height: 44pt; background: #d8eadd; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <p style="font-size: 20pt;">🤖</p>
+          </div>
+          <div>
+            <p style="font-size: 12pt; font-weight: 600; color: #1a2a3d;">Agent + Model Context Protocol</p>
+            <p style="font-size: 10pt; color: #5a6b80;">A standard way for agents to talk to external tools</p>
+          </div>
+        </div>
+        <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8pt;">
+          <div style="background: #d4e0ec; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #2E5880;">Jira / Linear</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">Fetch issues &amp; tasks</p>
+          </div>
+          <div style="background: #d4e0ec; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #2E5880;">Figma</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">Read design specs</p>
+          </div>
+          <div style="background: #d8eadd; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #38804A;">Playwright</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">Browse &amp; screenshot</p>
+          </div>
+          <div style="background: #d4e0ec; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #2E5880;">Sentry</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">Error stack traces</p>
+          </div>
+          <div style="background: #d4e0ec; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #2E5880;">GitHub</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">PRs, issues, reviews</p>
+          </div>
+          <div style="background: #d4e0ec; border-radius: 6pt; padding: 12pt; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="font-size: 11pt; font-weight: 600; color: #2E5880;">Database</p>
+            <p style="font-size: 9pt; color: #5a6b80; margin-top: 3pt;">Query &amp; inspect data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
