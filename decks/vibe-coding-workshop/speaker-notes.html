@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaker Notes — Vibe Coding Workshop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #111;
+      color: #e0e0e0;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 0; border-bottom: 1px solid #333; margin-bottom: 20px;
+    }
+    .header h1 { font-size: 18px; color: #fff; }
+    .current-indicator {
+      background: #38804A; color: #fff; padding: 6px 14px;
+      border-radius: 20px; font-size: 14px; font-weight: 600;
+    }
+    .slide-notes {
+      padding: 20px 24px; margin-bottom: 12px;
+      border-radius: 8px; border-left: 3px solid #333;
+      background: #1a1a1a; transition: all 0.3s ease;
+    }
+    .slide-notes.active {
+      border-left-color: #38804A; background: #1a2a1f;
+    }
+    .slide-notes.active .slide-number { color: #38804A; }
+    .slide-number {
+      font-size: 12px; font-weight: 600; color: #555;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .slide-title {
+      font-size: 16px; font-weight: 600; color: #fff;
+      margin-bottom: 10px;
+    }
+    .notes-text {
+      font-size: 15px; color: #bbb; line-height: 1.7;
+    }
+    .notes-text em { color: #38804A; font-style: normal; font-weight: 500; }
+    .presenter-tag {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 600; margin-bottom: 8px;
+    }
+    .presenter-dani { background: #2E5880; color: #fff; }
+    .presenter-pedro { background: #38804A; color: #fff; }
+    .transition {
+      font-size: 13px; color: #666; margin-top: 10px;
+      padding-top: 8px; border-top: 1px solid #2a2a2a;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Speaker Notes</h1>
+    <div class="current-indicator" id="indicator">Slide 1 / 29</div>
+  </div>
+
+  <div id="notes-container">
+    <!-- Slide 1 -->
+    <div class="slide-notes active" data-slide="1">
+      <p class="slide-number">Slide 1 — Cover</p>
+      <p class="slide-title">Vibe Coding</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Welcome everyone. Today we're going to talk about something that's changing the way software gets built — and it's not just for senior engineers. Whether you write code every day or haven't touched a terminal in years, by the end of this session you'll understand how to use AI agents to go from an idea to working software. And this afternoon, you'll get to try it yourselves in the hackathon.</p>
+      <p class="transition">→ "But before we dive in, we'd like to get a quick read on the room."</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-notes" data-slide="2">
+      <p class="slide-number">Slide 2 — Audience Pulse Check</p>
+      <p class="slide-title">Quick Pulse Check</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Let's start with a quick anonymous poll. Grab your phone, scan this QR code, and answer three quick questions. There are no wrong answers — this just helps us know where to focus. Take your time.<br><br><em>[Wait for responses to come in. Comment on the results live.]</em><br><br>Interesting — so we have a mix. That's perfect. We'll start with the fundamentals so everyone's on the same page, and then get into the hands-on stuff.</p>
+      <p class="transition">→ "So let's start with the most basic question: what's actually happening when you talk to an AI tool like ChatGPT or Claude?"</p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-notes" data-slide="3">
+      <p class="slide-number">Slide 3 — Section Divider</p>
+      <p class="slide-title">Understanding the Landscape</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text"><em>[Brief pause — let the audience read the divider.]</em></p>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide-notes" data-slide="4">
+      <p class="slide-number">Slide 4 — Model vs. Agent</p>
+      <p class="slide-title">Model vs. Agent — What's the Difference?</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">This is the most important distinction to understand. When you open ChatGPT or Claude in your browser and have a conversation — that's a model. It's incredibly smart, but it can only talk. It can't open your files, it can't run your tests, it can't edit your code.<br><br>An agent is different. It takes that same brain and gives it hands. It can read your project files, run terminal commands, call external services, and make changes to your codebase. Think of a model as an expert consultant you can ask questions to. An agent is more like a junior developer who has access to your laptop.<br><br>The key takeaway here — <em>a model thinks. An agent thinks and does.</em></p>
+      <p class="transition">→ "So what are the actual tools available today? Let's do a quick tour."</p>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide-notes" data-slide="5">
+      <p class="slide-number">Slide 5 — The Tool Landscape</p>
+      <p class="slide-title">The Current Landscape</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Here's a quick snapshot of what's out there. You don't need to memorize this — the point is that the landscape is rich, there are free and paid options, and they come in different flavors.<br><br>Notice the top row — those all have free tiers. <em>For this afternoon's hackathon, these are the ones you can use right away.</em><br><br>For today's demo we'll focus on Claude Code, but the concepts — context management, planning, using agents effectively — apply to every single one of these tools. Don't get caught up in "which tool is best." Focus on learning <em>how</em> to work with an agent.</p>
+      <p class="transition">→ "Now, there's one concept that makes or breaks your experience with any of these tools."</p>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide-notes" data-slide="6">
+      <p class="slide-number">Slide 6 — Section Divider</p>
+      <p class="slide-title">Context is Everything</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text"><em>[Brief pause.]</em></p>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide-notes" data-slide="7">
+      <p class="slide-number">Slide 7 — The Core Concept</p>
+      <p class="slide-title">The Game of Context</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">This is the single most important concept for working with AI agents effectively. The context window is the AI's short-term memory. It's everything the model can "see" at any given moment — your conversation, your files, your instructions.<br><br>Think of it this way. You hire the smartest consultant in the world. They know every programming language, every framework, every design pattern. But they walk into your office and have never seen your project. If you just say "fix the bug," they have no idea where to start.<br><br>But if you say "here's our project structure, here's the file with the bug, here's the error message, and here's how we run tests" — now they can help you. That's context. And managing it well is the difference between an AI that frustrates you and one that feels like a superpower.</p>
+      <p class="transition">→ "But context has a limit. And when you hit that limit, things go wrong."</p>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide-notes" data-slide="8">
+      <p class="slide-number">Slide 8 — Context Overflow</p>
+      <p class="slide-title">The Problem: Context Overflow</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Here's the catch. That context window? It's not infinite. Every message you send, every file the agent reads, every response it gives — all of that fills up the window.<br><br>When it gets full, something called "compaction" happens. The system summarizes the older parts of your conversation to make room. Sounds harmless, right? But in practice, it can lose crucial details. Maybe it forgets a decision you made earlier. Maybe it forgets the file structure. And suddenly the agent starts making mistakes or contradicting itself.<br><br>So the goal is simple: <em>be strategic.</em> Don't dump everything into the chat. Use the right tools to give the agent what it needs, when it needs it.</p>
+      <p class="transition">→ "So what are those tools? Let's look at the toolkit."</p>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide-notes" data-slide="9">
+      <p class="slide-number">Slide 9 — Toolkit Overview</p>
+      <p class="slide-title">The Solution: Using the Right Tools</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Here's the toolkit. Each of these solves a different aspect of the context problem. Let's go through them one by one.</p>
+      <p class="transition">→ "First up — the foundation of everything."</p>
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="slide-notes" data-slide="10">
+      <p class="slide-number">Slide 10 — CLAUDE.md</p>
+      <p class="slide-title">CLAUDE.md — Your Project's Instruction Manual</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">The CLAUDE.md file is the single most important thing you can set up. It's a markdown file you put at the root of your project, and it's automatically loaded into the agent's context every time you start a session.<br><br>Think of it as the README for your AI colleague. What's in this repo? How is it organized? How do you run the dev server? How do you run tests? What are the naming conventions?<br><br>Without this, the agent is flying blind. With it, the agent starts every session already understanding your project. In other tools like Codex or GitHub Copilot, this same concept exists under the name AGENTS.md.</p>
+      <p class="transition">→ "But what about knowledge you only need sometimes?"</p>
+    </div>
+
+    <!-- Slide 11 -->
+    <div class="slide-notes" data-slide="11">
+      <p class="slide-number">Slide 11 — Skills</p>
+      <p class="slide-title">Skills — On-Demand Knowledge</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Skills solve a specific problem: what about knowledge the agent only needs sometimes?<br><br>Say you need the agent to follow a very specific design system, or use a particular CLI tool. You could put all of that in the CLAUDE.md, but then it's eating up context space permanently — even when the agent is doing something completely unrelated.<br><br>Skills are like reference books on a shelf. The agent pulls one down when it needs it, uses it, and puts it back. We'll actually see this in action during the demo — we'll compare the agent's output with and without a design skill installed.</p>
+      <p class="transition">→ "What about when the agent needs to do research mid-task?"</p>
+    </div>
+
+    <!-- Slide 12 -->
+    <div class="slide-notes" data-slide="12">
+      <p class="slide-number">Slide 12 — Subagents</p>
+      <p class="slide-title">Subagents — Fresh Context on Demand</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Subagents are one of the most powerful and underused features. Imagine you're working with the agent on a feature, and midway through you realize you need to research how a certain API works. If you do that research in the same chat, all those intermediate steps fill up your context window. And your main task suffers.<br><br>A subagent is like sending an intern to the library. They go do the research in their own separate space, come back with a summary, and your main workspace stays clean. This is how you keep long sessions productive.</p>
+      <p class="transition">→ "Next, let's talk about automation."</p>
+    </div>
+
+    <!-- Slide 13 -->
+    <div class="slide-notes" data-slide="13">
+      <p class="slide-number">Slide 13 — Hooks</p>
+      <p class="slide-title">Hooks — Automated Guardrails</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Hooks are automated scripts that trigger before or after certain agent actions. If you want the agent to always run the linter before committing, or always run tests after saving a file — that's a hook.<br><br>This is great because it embeds your quality standards into the workflow. The agent doesn't need to remember to lint — it just happens automatically. Think of hooks as invisible guardrails.</p>
+      <p class="transition">→ "And finally, how does the agent talk to the outside world?"</p>
+    </div>
+
+    <!-- Slide 14 -->
+    <div class="slide-notes" data-slide="14">
+      <p class="slide-number">Slide 14 — MCP Servers</p>
+      <p class="slide-title">MCP Servers — Connecting to the World</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">MCP stands for Model Context Protocol. It's a standard that allows agents to connect to external tools and services. Think of it as giving the agent a phone line to the outside world.<br><br>Without MCPs, the agent can only work with what's on your local machine. With MCPs, it can fetch issues from Jira, read designs from Figma, browse your running app with Playwright, pull error details from Sentry, and much more.<br><br>We'll see this in action during the demo — we'll use the Playwright MCP to have the agent open a browser and take screenshots of its own work.</p>
+      <p class="transition">→ "So now we have the concepts. Let's talk about how to actually work with an agent day to day."</p>
+    </div>
+
+    <!-- Slide 15 -->
+    <div class="slide-notes" data-slide="15">
+      <p class="slide-number">Slide 15 — Section Divider</p>
+      <p class="slide-title">How to Work with an Agent</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text"><em>[Brief pause.]</em></p>
+    </div>
+
+    <!-- Slide 16 -->
+    <div class="slide-notes" data-slide="16">
+      <p class="slide-number">Slide 16 — The Golden Rule</p>
+      <p class="slide-title">The Golden Rule</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">If you remember one thing from this entire presentation, let it be this: <em>first plan, then implement.</em><br><br>The number one mistake people make with AI agents is jumping straight in. "Build me a login page." "Add a dashboard." The agent will try, but without a clear plan, it'll make assumptions — and those assumptions are often wrong.<br><br>The right approach is to treat the agent like a developer on your team. You wouldn't tell a developer "just build it" with no spec. You'd write requirements, discuss the approach, then implement. Same thing here. You're the product owner. The agent is the developer.</p>
+      <p class="transition">→ "And the best way to define what you want? A PRD."</p>
+    </div>
+
+    <!-- Slide 17 -->
+    <div class="slide-notes" data-slide="17">
+      <p class="slide-number">Slide 17 — PRD</p>
+      <p class="slide-title">The PRD — Your Feature Blueprint</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">A PRD — Product Requirement Document — sounds fancy, but it doesn't have to be. It's just a clear description of what you want built.<br><br>At minimum, you need: what's the goal, who's it for, what does "done" look like, and what constraints should the agent know about. That's it. You can write this as a GitHub Issue, a Notion doc, or even a plain text file.<br><br>The point is that when you give this to the agent, there's no ambiguity. The agent knows exactly what to build, how to validate it, and what not to touch. You'll see a real PRD during the demo in a few minutes.</p>
+      <p class="transition">→ "Let's tie everything together visually."</p>
+    </div>
+
+    <!-- Slide 18 -->
+    <div class="slide-notes" data-slide="18">
+      <p class="slide-number">Slide 18 — The Big Picture</p>
+      <p class="slide-title">The Big Picture</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Let's take a step back and see how everything connects. At the center is "Vibe Coding."<br><br>The agent has three pillars: a model for thinking, tools for acting, and context for memory. We manage that context with the toolkit we just covered. The workflow is always the same: define, plan, implement, review, iterate. And when you get comfortable, you can scale by running multiple agents in parallel.<br><br>This is the full picture. Everything we'll see in the demo uses this framework.</p>
+      <p class="transition">→ "Speaking of the demo — let's see all of this in action. I'll hand it over to Pedro."</p>
+    </div>
+
+    <!-- Slide 19 -->
+    <div class="slide-notes" data-slide="19">
+      <p class="slide-number">Slide 19 — Section Divider</p>
+      <p class="slide-title">Live Demo: Commit Message Hall of Fame</p>
+      <p class="presenter-tag presenter-pedro">Pedro</p>
+      <p class="notes-text"><em>[Pedro takes over.]</em></p>
+    </div>
+
+    <!-- Slide 20 -->
+    <div class="slide-notes" data-slide="20">
+      <p class="slide-number">Slide 20 — The App</p>
+      <p class="slide-title">Commit Message Hall of Fame</p>
+      <p class="presenter-tag presenter-pedro">Pedro</p>
+      <p class="notes-text">Alright, let's see this in action. We built a little app called Commit Message Hall of Fame. It's a social platform where you submit real git commit messages and vote on them. We've pre-loaded it with some classics.<br><br><em>[Read a few out loud — let the audience laugh.]</em><br><br>The app already works — you can browse, submit, and vote. Now we're going to add a new feature using AI agents, live.</p>
+      <p class="transition">→ "Here's the feature we're building."</p>
+    </div>
+
+    <!-- Slide 21 -->
+    <div class="slide-notes" data-slide="21">
+      <p class="slide-number">Slide 21 — Feature PRD</p>
+      <p class="slide-title">Feature: AI Roast &amp; Translate</p>
+      <p class="presenter-tag presenter-pedro">Pedro</p>
+      <p class="notes-text">Here's the feature we're going to build. It's structured as a PRD. Clear goal, user story, acceptance criteria, and boundaries.<br><br>Notice how specific this is. We're not saying "add AI to the app." We're saying exactly what buttons, what behavior, what the output looks like, and what not to touch. This is what makes the agent effective.<br><br><em>[Optional: ask the audience if they'd change anything about the PRD.]</em></p>
+      <p class="transition">→ "Now let's feed this to the agent and watch it work."</p>
+    </div>
+
+    <!-- Slide 22 -->
+    <div class="slide-notes" data-slide="22">
+      <p class="slide-number">Slide 22 — Demo Flow</p>
+      <p class="slide-title">Demo Flow</p>
+      <p class="presenter-tag presenter-pedro">Pedro</p>
+      <p class="notes-text"><em>[Switch to live terminal for ~30 min of demos.]</em><br><br><em>Demo A:</em> With frontend-design skill. Watch how I give it the PRD, ask it to plan first, then let it implement. Playwright MCP lets the agent check its own work.<br><br><em>Demo B:</em> Same feature, no skill. Compare the output side-by-side. The difference is clear — context dramatically affects quality.<br><br><em>Bonus:</em> Conductor for parallel agents. Two features, two agents, two worktrees, one developer.</p>
+    </div>
+
+    <!-- Slide 23 -->
+    <div class="slide-notes" data-slide="23">
+      <p class="slide-number">Slide 23 — Section Divider</p>
+      <p class="slide-title">From Code to Production</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text"><em>[Dani takes back over.]</em> Thanks Pedro.</p>
+    </div>
+
+    <!-- Slide 24 -->
+    <div class="slide-notes" data-slide="24">
+      <p class="slide-number">Slide 24 — The Full Pipeline</p>
+      <p class="slide-title">The Full Workflow</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">What you just saw in the demo is one piece of the puzzle. In practice, the full workflow looks like this.<br><br>First, you code with AI — the agent implements features, just like we showed. Then, on the first push, a PR is created automatically. The code review is also done by AI — an automated reviewer checks for issues, style violations, security concerns before a human even looks at it. And when bugs surface in production, tools like Sentry combined with MCP servers let the agent pull the stack trace, analyze the error, and propose a fix.<br><br>This isn't science fiction. Teams are running this pipeline today. And by the end of this afternoon's hackathon, you'll have experienced the first step of it yourselves.</p>
+      <p class="transition">→ "Which brings us to the hackathon. Let's make sure you're set up for success."</p>
+    </div>
+
+    <!-- Slide 25 -->
+    <div class="slide-notes" data-slide="25">
+      <p class="slide-number">Slide 25 — Section Divider</p>
+      <p class="slide-title">Hackathon Survival Guide</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text"><em>[Brief pause.]</em></p>
+    </div>
+
+    <!-- Slide 26 -->
+    <div class="slide-notes" data-slide="26">
+      <p class="slide-number">Slide 26 — Survival Guide</p>
+      <p class="slide-title">Hackathon Survival Guide</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Alright, hackathon time. Here's your survival guide.<br><br><em>Before you start:</em> pick something simple. Seriously. A focused idea executed well beats an ambitious idea half-finished. Write a quick PRD — even five bullet points is enough. And set up your CLAUDE.md so the agent knows your project.<br><br><em>While building:</em> always let the agent plan first. Don't just say "build it." Work in small steps. And if things go sideways — and they might — don't fight a broken context. Just start a new conversation. It takes 30 seconds and can save you an hour of frustration.<br><br><em>The biggest pitfalls:</em> pasting huge documents into chat instead of using files, accepting code without reading it, and stubbornly trying to fix a confused agent instead of starting fresh.</p>
+      <p class="transition">→ "And a few power moves to really stand out."</p>
+    </div>
+
+    <!-- Slide 27 -->
+    <div class="slide-notes" data-slide="27">
+      <p class="slide-number">Slide 27 — Power Moves</p>
+      <p class="slide-title">Power Moves</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Three power moves if you want to go the extra mile.<br><br>Use the frontend-design skill for any UI work. It's the difference between "looks like a default template" and "looks like a real product."<br><br>Set up Playwright MCP so your agent can check its own work in a real browser. It's like giving the agent eyes.<br><br>And if you're feeling ambitious, use Conductor to run multiple agents in parallel. Two features at once, no extra effort.</p>
+      <p class="transition">→ "Let's wrap up."</p>
+    </div>
+
+    <!-- Slide 28 -->
+    <div class="slide-notes" data-slide="28">
+      <p class="slide-number">Slide 28 — Resources</p>
+      <p class="slide-title">Resources</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Here are all the resources we mentioned. Scan the QR code to get them all in one place — it takes you to the GitHub repo with all the links. These will be especially useful during the hackathon this afternoon.</p>
+      <p class="transition">→ Direct to final slide.</p>
+    </div>
+
+    <!-- Slide 29 -->
+    <div class="slide-notes" data-slide="29">
+      <p class="slide-number">Slide 29 — Closing</p>
+      <p class="slide-title">Thank You</p>
+      <p class="presenter-tag presenter-dani">Dani</p>
+      <p class="notes-text">Thanks everyone. We're happy to take any questions before we break for the hackathon. And we'll both be around this afternoon to help — don't hesitate to grab us.</p>
+    </div>
+  </div>
+
+  <script>
+    const channel = new BroadcastChannel('slide-sync');
+    const notes = document.querySelectorAll('.slide-notes');
+    const indicator = document.getElementById('indicator');
+
+    function activate(slideNum) {
+      notes.forEach(n => n.classList.remove('active'));
+      const target = document.querySelector(`[data-slide="${slideNum}"]`);
+      if (target) {
+        target.classList.add('active');
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        indicator.textContent = `Slide ${slideNum} / 29`;
+      }
+    }
+
+    channel.onmessage = (e) => {
+      if (e.data && e.data.slide) {
+        activate(e.data.slide);
+      }
+    };
+
+    // Also allow clicking to manually activate
+    notes.forEach(n => {
+      n.addEventListener('click', () => {
+        const num = parseInt(n.dataset.slide);
+        activate(num);
+      });
+    });
+  </script>
+</body>
+</html>
