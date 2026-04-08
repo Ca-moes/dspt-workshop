@@ -23,7 +23,8 @@
 
 ## Presentation
 
-The slides for this workshop are available as a [live viewer](https://ca-moes.github.io/dspt-workshop/decks/vibe-coding-workshop/viewer.html).
+- [Slide Viewer](https://ca-moes.github.io/dspt-workshop/decks/vibe-coding-workshop/viewer.html) — the presentation
+- [Speaker Notes](https://ca-moes.github.io/dspt-workshop/decks/vibe-coding-workshop/speaker-notes.html) — syncs automatically when both are open in the same browser
 
 ---
 
