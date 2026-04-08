@@ -15,6 +15,7 @@
 - [Anthropic Skills (frontend-design)](https://skills.sh/anthropics/skills/frontend-design) — Skill for creating distinctive UIs
 - [Conductor](https://conductor.build) — Run parallel agents with git worktrees
 - [Playwright MCP](https://github.com/microsoft/playwright-mcp) — Let agents browse and screenshot your app
+- [Wispr Flow](https://wisprflow.ai/) — Voice-to-text for dictating prompts to AI agents ([sign up](https://wisprflow.ai/r?ANDRE1407))
 
 ### Learning & Docs
 - [Anthropic Prompting Guide](https://docs.anthropic.com) — Official prompting documentation
