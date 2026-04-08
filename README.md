@@ -9,6 +9,7 @@
 ### Agent Best Practices
 - [Claude Code Best Practices](https://github.com/shanraisshan/claude-code-best-practice) — Community-curated tips for working with Claude Code
 - [Agency Agents](https://github.com/msitarzewski/agency-agents) — Agent templates and patterns
+- [Superpowers](https://github.com/obra/superpowers) — Agentic skills framework and software development methodology
 
 ### Tools & Integrations
 - [Anthropic Skills (frontend-design)](https://skills.sh/anthropics/skills/frontend-design) — Skill for creating distinctive UIs
